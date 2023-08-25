@@ -10,8 +10,8 @@ html {
 
 .page {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -161,7 +161,8 @@ a {
 }
 
 .button:active {
-  background-color: #545050;;
+  text-decoration: none;
+  background-color: #545050;
 }
 
 .button:focus {
@@ -175,8 +176,8 @@ a {
 
 .search-form__submit-button {
   margin-top: 20px;
-  inline-size: 194px;
-  block-size: 34px;
+  min-inline-size: 194px;
+  min-block-size: 34px;
 }
 
 .title {
@@ -186,6 +187,7 @@ a {
   font-size: 75px;
   line-height: 90%;
   text-transform: uppercase;
+  inline-size: 399px;
 }
 
 .content__accent {
@@ -198,6 +200,7 @@ a {
   flex-direction: column;
   gap: 30px;
   overflow: auto;
+  overflow-x: hidden;
   block-size: 298px;
 }
 
@@ -227,12 +230,15 @@ a {
   color: #fff;
 }
 
-.content__video-card-description-container:hover {
+.content__video-card:hover {
   text-decoration: underline;
+  text-decoration-color: #fff;
+  text-underline-offset: 4px;
 }
 
 .content__video-card:active {
-  background-color: #545050;;
+  text-decoration: none;
+  background-color: #545050;
 }
 
 .content__video-card-thumbnail {
@@ -257,6 +263,6 @@ a {
 .more-button {
   margin-bottom: 4px;
   margin-left: 4px;
-  inline-size: 98%;
-  block-size: 34px;
+  min-inline-size: 98%;
+  min-block-size: 34px;
 }
