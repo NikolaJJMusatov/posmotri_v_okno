@@ -111,7 +111,7 @@ a {
   color: rgb(255 255 255 / 0.7);
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
